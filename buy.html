@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>SevenFlags Real Estate</title>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header-section">
+    <div class="website-logo">
+      <img class="logo-monogram" src="Icons/Rent Home Section.svg" alt="Seven Flags" />
+      <div class="brand-name">SevenFlags</div>
+    </div>
+
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <div class="dropdown1">
+        <a href="#">Properties <i class="fas fa-angle-down"></i></a>
+        <ul class="dropdown1-menu">
+          <li><a href="buy.html">Buy</a></li>
+          <li><a href="rent.html">Rent</a></li>
+        </ul>
+      </div>
+      <a href="invest.html">Invest</a>
+      <a href="blog.html">Blog</a>
+      <a href="about.html">Overview</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="buttons">
+      <button class="navigation-button">Admin</button>
+    </div>
+  </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <header class="hero-header">
+                    <h1 class="hero-title">Find Your Dream Home with Seven Flags</h1>
+                    <p class="hero-description">Explore our curated listings tailored to your lifestyle and budget.</p>
+                </header>
+                <div class="search-section">
+                    <div class="custom-search-bar">
+                        <div class="dropdown-wrapper">
+                        <!-- Country Dropdown -->
+                        <div class="dropdown">
+                            <button class="dropdown-btn" id="countryBtn">
+                            <span>Country</span>
+                            <span class="arrow">&#9662;</span>
+                            </button>
+                            <ul class="dropdown-menu" id="countryMenu">
+                            <li>Kenya</li>
+                            <li>Uganda</li>
+                            <li>Tanzania</li>
+                            <li>South Africa</li>
+                            <li>Ghana</li>
+                            </ul>
+                        </div>
+
+                        <!-- City Text Input -->
+                        <div class="input-box">
+                            <input type="text" id="cityInput" placeholder="City" />
+                        </div>
+
+                        <!-- Property Type Dropdown -->
+                        <div class="dropdown">
+                            <button class="dropdown-btn" id="typeBtn">
+                            <span>Property Type</span>
+                            <span class="arrow">&#9662;</span>
+                            </button>
+                            <ul class="dropdown-menu" id="typeMenu">
+                            <li>Apartment</li>
+                            <li>House</li>
+                            <li>Villa</li>
+                            <li>Studio</li>
+                            </ul>
+                        </div>
+
+                        <!-- Price Range Dropdown -->
+                        <div class="dropdown">
+                            <button class="dropdown-btn" id="priceBtn">
+                            <span>Price Range</span>
+                            <span class="arrow">&#9662;</span>
+                            </button>
+                            <ul class="dropdown-menu" id="priceMenu">
+                            <li>$0 - $50,000</li>
+                            <li>$50,000 - $100,000</li>
+                            <li>$100,000 - $200,000</li>
+                            <li>$200,000+</li>
+                            </ul>
+                        </div>
+                        </div>
+
+                        <button class="search-btn">Search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Properties Section -->
+        <section class="properties">
+            <h2 class="properties-title">Choose Your Home</h2>
+            <div class="properties-grid">
+                <!-- Property Card -->
+                <a href="blog.html" class="property-card-link">
+                <article class="property-card" style="background-image: url('Images/john-fornander-Id7u0EkTjBE-unsplash.jpg');">
+                    <div class="price-badge">$2,640</div>
+
+                    <div class="house-details">
+                    <h3 class="house-name">Safari Oasis</h3>
+                    <ul class="property-features">
+                        <li class="feature"><i class="fa-solid fa-border-all"></i> 1,480 Sq ft</li>
+                        <li class="feature"><i class="fa-solid fa-bed"></i> 2 Bedrooms</li>
+                        <li class="feature"><i class="fa-solid fa-bath"></i> 2 Bathrooms</li>
+                    </ul>
+                    </div>
+                </article>
+                </a>
+
+                <a href="blog.html" class="property-card-link">
+                <article class="property-card" style="background-image: url('Images/john-fornander-Id7u0EkTjBE-unsplash.jpg');">
+                    <div class="price-badge">$2,640</div>
+
+                    <div class="house-details">
+                    <h3 class="house-name">Safari Oasis</h3>
+                    <ul class="property-features">
+                        <li class="feature"><i class="fa-solid fa-border-all"></i> 1,480 Sq ft</li>
+                        <li class="feature"><i class="fa-solid fa-bed"></i> 2 Bedrooms</li>
+                        <li class="feature"><i class="fa-solid fa-bath"></i> 2 Bathrooms</li>
+                    </ul>
+                    </div>
+                </article>
+                </a>
+
+                <a href="blog.html" class="property-card-link">
+                <article class="property-card" style="background-image: url('Images/john-fornander-Id7u0EkTjBE-unsplash.jpg');">
+                    <div class="price-badge">$2,640</div>
+
+                    <div class="house-details">
+                    <h3 class="house-name">Safari Oasis</h3>
+                    <ul class="property-features">
+                        <li class="feature"><i class="fa-solid fa-border-all"></i> 1,480 Sq ft</li>
+                        <li class="feature"><i class="fa-solid fa-bed"></i> 2 Bedrooms</li>
+                        <li class="feature"><i class="fa-solid fa-bath"></i> 2 Bathrooms</li>
+                    </ul>
+                    </div>
+                </article>
+                </a>
+
+                <a href="blog.html" class="property-card-link">
+                <article class="property-card" style="background-image: url('Images/john-fornander-Id7u0EkTjBE-unsplash.jpg');">
+                    <div class="price-badge">$2,640</div>
+
+                    <div class="house-details">
+                    <h3 class="house-name">Safari Oasis</h3>
+                    <ul class="property-features">
+                        <li class="feature"><i class="fa-solid fa-border-all"></i> 1,480 Sq ft</li>
+                        <li class="feature"><i class="fa-solid fa-bed"></i> 2 Bedrooms</li>
+                        <li class="feature"><i class="fa-solid fa-bath"></i> 2 Bathrooms</li>
+                    </ul>
+                    </div>
+                </article>
+                </a>
+
+                <a href="blog.html" class="property-card-link">
+                <article class="property-card" style="background-image: url('Images/john-fornander-Id7u0EkTjBE-unsplash.jpg');">
+                    <div class="price-badge">$2,640</div>
+
+                    <div class="house-details">
+                    <h3 class="house-name">Safari Oasis</h3>
+                    <ul class="property-features">
+                        <li class="feature"><i class="fa-solid fa-border-all"></i> 1,480 Sq ft</li>
+                        <li class="feature"><i class="fa-solid fa-bed"></i> 2 Bedrooms</li>
+                        <li class="feature"><i class="fa-solid fa-bath"></i> 2 Bathrooms</li>
+                    </ul>
+                    </div>
+                </article>
+                </a>
+
+                <a href="blog.html" class="property-card-link">
+                <article class="property-card" style="background-image: url('Images/john-fornander-Id7u0EkTjBE-unsplash.jpg');">
+                    <div class="price-badge">$2,640</div>
+
+                    <div class="house-details">
+                    <h3 class="house-name">Safari Oasis</h3>
+                    <ul class="property-features">
+                        <li class="feature"><i class="fa-solid fa-border-all"></i> 1,480 Sq ft</li>
+                        <li class="feature"><i class="fa-solid fa-bed"></i> 2 Bedrooms</li>
+                        <li class="feature"><i class="fa-solid fa-bath"></i> 2 Bathrooms</li>
+                    </ul>
+                    </div>
+                </article>
+                </a>
+
+                <a href="blog.html" class="property-card-link">
+                <article class="property-card" style="background-image: url('Images/john-fornander-Id7u0EkTjBE-unsplash.jpg');">
+                    <div class="price-badge">$2,640</div>
+
+                    <div class="house-details">
+                    <h3 class="house-name">Safari Oasis</h3>
+                    <ul class="property-features">
+                        <li class="feature"><i class="fa-solid fa-border-all"></i> 1,480 Sq ft</li>
+                        <li class="feature"><i class="fa-solid fa-bed"></i> 2 Bedrooms</li>
+                        <li class="feature"><i class="fa-solid fa-bath"></i> 2 Bathrooms</li>
+                    </ul>
+                    </div>
+                </article>
+                </a>
+
+                <a href="blog.html" class="property-card-link">
+                <article class="property-card" style="background-image: url('Images/john-fornander-Id7u0EkTjBE-unsplash.jpg');">
+                    <div class="price-badge">$2,640</div>
+
+                    <div class="house-details">
+                    <h3 class="house-name">Safari Oasis</h3>
+                    <ul class="property-features">
+                        <li class="feature"><i class="fa-solid fa-border-all"></i> 1,480 Sq ft</li>
+                        <li class="feature"><i class="fa-solid fa-bed"></i> 2 Bedrooms</li>
+                        <li class="feature"><i class="fa-solid fa-bath"></i> 2 Bathrooms</li>
+                    </ul>
+                    </div>
+                </article>
+                </a>
+
+                <a href="blog.html" class="property-card-link">
+                <article class="property-card" style="background-image: url('Images/john-fornander-Id7u0EkTjBE-unsplash.jpg');">
+                    <div class="price-badge">$2,640</div>
+
+                    <div class="house-details">
+                    <h3 class="house-name">Safari Oasis</h3>
+                    <ul class="property-features">
+                        <li class="feature"><i class="fa-solid fa-border-all"></i> 1,480 Sq ft</li>
+                        <li class="feature"><i class="fa-solid fa-bed"></i> 2 Bedrooms</li>
+                        <li class="feature"><i class="fa-solid fa-bath"></i> 2 Bathrooms</li>
+                    </ul>
+                    </div>
+                </article>
+                </a>
+                
+            </div>
+        </section>
+
+        <!-- Viewing Form Section -->
+        <section class="viewing-form-section">
+            <div class="form-container">
+                <header class="form-header">
+                <h2>Schedule a Viewing</h2>
+                <p>Fill out the form below to schedule a viewing</p>
+                </header>
+                <form class="viewing-form" action="#" method="POST">
+                <div class="form-row two-columns">
+                    <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required />
+                    </div>
+                    <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                    </div>
+                </div>
+                <div class="form-row one-column">
+                    <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
+                    </div>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+  <!-- Footer Section -->
+  <footer class="custom-footer">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <div class="footer-logo">
+          <i class="fa-solid fa-house-chimney"></i>
+          <span>SevenFlags</span>
+        </div>
+        <p>Embark on a journey of discovery with Seven Flags’ commitment to excellence.</p>
+      </div>
+
+      <div class="footer-section links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="#">Listing</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Our Team</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section contact">
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><i class="fas fa-phone-alt"></i> +91 600 500 600</li>
+          <li><i class="fas fa-envelope"></i> hello@sevenflags.com</li>
+          <li><i class="fas fa-map-marker-alt"></i> 1234, Nairobi, Kenya</li>
+        </ul>
+      </div>
+
+      <div class="footer-section newsletter">
+        <h4>Newsletter</h4>
+        <form>
+          <input type="email" placeholder="Your Email" required />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="social-icons">
+        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+      </div>
+      <p>&copy; 2025 Seven Flags. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+<script>
+// Dropdown setup
+function setupDropdown(btnId, menuId) {
+  const btn = document.getElementById(btnId);
+  const menu = document.getElementById(menuId);
+
+  btn.addEventListener('click', () => {
+    closeAllDropdowns();
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  });
+
+  menu.querySelectorAll('li').forEach(item => {
+    item.addEventListener('click', () => {
+      btn.querySelector('span').textContent = item.textContent;
+      menu.style.display = 'none';
+    });
+  });
+}
+
+function closeAllDropdowns() {
+  document.querySelectorAll('.dropdown-menu').forEach(menu => {
+    menu.style.display = 'none';
+  });
+}
+
+document.addEventListener('click', function (e) {
+  if (!e.target.closest('.dropdown')) {
+    closeAllDropdowns();
+  }
+});
+
+// Initialize dropdowns
+setupDropdown('countryBtn', 'countryMenu');
+setupDropdown('typeBtn', 'typeMenu');
+setupDropdown('priceBtn', 'priceMenu');
+
+// Search button logic
+document.querySelector('.search-btn').addEventListener('click', () => {
+  const country = document.getElementById('countryBtn').querySelector('span').textContent;
+  const city = document.getElementById('cityInput').value;
+  const type = document.getElementById('typeBtn').querySelector('span').textContent;
+  const price = document.getElementById('priceBtn').querySelector('span').textContent;
+
+  alert(`Searching for:\nCountry: ${country}\nCity: ${city}\nType: ${type}\nPrice: ${price}`);
+});
+
+</script>
