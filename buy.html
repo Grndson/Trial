@@ -10,31 +10,33 @@
 <body>
 
   <!-- Header Section -->
-  <header class="header-section">
-    <div class="website-logo">
-      <img class="logo-monogram" src="Icons/Rent Home Section.svg" alt="Seven Flags" />
-      <div class="brand-name">SevenFlags</div>
-    </div>
+      <header class="header-section">
+  <div class="website-logo">
+    <img class="logo-monogram" src="Icons/Rent Home Section.svg" alt="Seven Flags" />
+    <div class="brand-name">SevenFlags</div>
+  </div>
 
-    <nav class="navbar">
-      <a href="index.html">Home</a>
-      <div class="dropdown1">
-        <a href="#">Properties <i class="fas fa-angle-down"></i></a>
-        <ul class="dropdown1-menu">
-          <li><a href="buy.html">Buy</a></li>
-          <li><a href="rent.html">Rent</a></li>
-        </ul>
-      </div>
-      <a href="invest.html">Invest</a>
-      <a href="blog.html">Blog</a>
-      <a href="about.html">Overview</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
 
-    <div class="buttons">
-      <button class="navigation-button">Admin</button>
+  <nav class="navbar" id="navbar">
+    <a href="index.html">Home</a>
+    <div class="dropdown1">
+      <a href="#">Properties <i class="fas fa-angle-down"></i></a>
+      <ul class="dropdown1-menu">
+        <li><a href="buy.html">Buy</a></li>
+        <li><a href="rent.html">Rent</a></li>
+      </ul>
     </div>
-  </header>
+    <a href="invest.html">Invest</a>
+    <a href="blog.html">Blog</a>
+    <a href="about.html">Overview</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="buttons">
+    <button class="navigation-button">Admin</button>
+  </div>
+</header>
 
     <!-- Main Content -->
     <main>
@@ -326,54 +328,7 @@
       <p>&copy; 2025 Seven Flags. All rights reserved.</p>
     </div>
   </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
 
-<script>
-// Dropdown setup
-function setupDropdown(btnId, menuId) {
-  const btn = document.getElementById(btnId);
-  const menu = document.getElementById(menuId);
-
-  btn.addEventListener('click', () => {
-    closeAllDropdowns();
-    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-  });
-
-  menu.querySelectorAll('li').forEach(item => {
-    item.addEventListener('click', () => {
-      btn.querySelector('span').textContent = item.textContent;
-      menu.style.display = 'none';
-    });
-  });
-}
-
-function closeAllDropdowns() {
-  document.querySelectorAll('.dropdown-menu').forEach(menu => {
-    menu.style.display = 'none';
-  });
-}
-
-document.addEventListener('click', function (e) {
-  if (!e.target.closest('.dropdown')) {
-    closeAllDropdowns();
-  }
-});
-
-// Initialize dropdowns
-setupDropdown('countryBtn', 'countryMenu');
-setupDropdown('typeBtn', 'typeMenu');
-setupDropdown('priceBtn', 'priceMenu');
-
-// Search button logic
-document.querySelector('.search-btn').addEventListener('click', () => {
-  const country = document.getElementById('countryBtn').querySelector('span').textContent;
-  const city = document.getElementById('cityInput').value;
-  const type = document.getElementById('typeBtn').querySelector('span').textContent;
-  const price = document.getElementById('priceBtn').querySelector('span').textContent;
-
-  alert(`Searching for:\nCountry: ${country}\nCity: ${city}\nType: ${type}\nPrice: ${price}`);
-});
-
-</script>

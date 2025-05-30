@@ -11,31 +11,25 @@
 
 <body> 
     <!-- Header Section -->
-    <header class="header-section">
-        <div class="website-logo">
+  <header class="site-header">
+    <div class="header-container">
+      <div class="website-logo">
         <img class="logo-monogram" src="Icons/Rent Home Section.svg" alt="Seven Flags" />
         <div class="brand-name">SevenFlags</div>
-        </div>
+      </div>
 
-        <nav class="navbar">
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      
+      <nav class="navbar" id="navbar">
         <a href="index.html">Home</a>
-        <div class="dropdown1">
-            <a href="#">Properties <i class="fas fa-angle-down"></i></a>
-            <ul class="dropdown1-menu">
-            <li><a href="buy.html">Buy</a></li>
-            <li><a href="rent.html">Rent</a></li>
-            </ul>
-        </div>
+        <a href="rent.html">Properties</a>
         <a href="invest.html">Invest</a>
         <a href="blog.html">Blog</a>
         <a href="about.html">Overview</a>
         <a href="contact.html">Contact</a>
-        </nav>
-
-        <div class="buttons">
-        <button class="navigation-button">Admin</button>
-        </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
     <!-- Main Content -->
     <main class="main-content">
@@ -158,3 +152,9 @@
 }
 
 </style>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("navbar").classList.toggle("active");
+  }
+</script>

@@ -5,50 +5,46 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
   <title>SevenFlags Real Estate</title>
 </head>
 
 <body>
   <!-- Header Section -->
-  <header class="header-section">
+<header class="hero-header">
+  <div class="top-bar">
     <div class="website-logo">
       <img class="logo-monogram" src="Icons/Rent Home Section.svg" alt="Seven Flags" />
       <div class="brand-name">SevenFlags</div>
     </div>
 
-    <nav class="navbar">
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    
+    <nav class="navbar" id="navbar">
       <a href="index.html">Home</a>
-      <div class="dropdown1">
-        <a href="#">Properties <i class="fas fa-angle-down"></i></a>
-        <ul class="dropdown1-menu">
-          <li><a href="buy.html">Buy</a></li>
-          <li><a href="rent.html">Rent</a></li>
-        </ul>
-      </div>
+      <a href="rent.html">Properties</a>
       <a href="invest.html">Invest</a>
       <a href="blog.html">Blog</a>
       <a href="about.html">Overview</a>
       <a href="contact.html">Contact</a>
     </nav>
+  </div>
 
-    <div class="buttons">
-      <button class="navigation-button">Admin</button>
-    </div>
-  </header>
+  <section class="hero-details">
+    <h1 class="hero-tagline">Home Is Where Your Story Begins.</h1>
+    <p class="hero-description">
+      <span>Unlock your dream home, explore endless possibilities with </span>
+      <span class="highlight">SevenFlags</span> — your premier real estate destination.
+    </p>
+  </section>
+
+
+</header>
 
   <!-- Main Content -->
   <main>
-    <!-- Hero Section -->
-    <section class="hero-details">
-      <h1 class="hero-tagline">Home Is Where Your Story Begins.</h1>
-      <p class="hero-description">
-        <span>Unlock your dream home, explore endless possibilities with </span>
-        <span class="highlight">SevenFlags</span> — your premier real estate destination.
-      </p>
-      <a href="#" class="hero-button">Find Properties</a>
-    </section>
-  
 
     <!-- Our Services Section -->
     <section class="services-section">
@@ -92,59 +88,81 @@
 
 
     <!-- Featured Listings Section -->
-    <section class="featured-listings">
-      <h2>Featured Listings</h2>
-      <div class="listing-grid">
+   <section class="featured-listings">
+  <h2>Featured Listings</h2>
+
+  <div class="swiper featuredSwiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
         <a href="property.html" class="property-card-link">
-          <article class="property-card" style="background-image: url('Images/john-fornander-Id7u0EkTjBE-unsplash.jpg');">
-            <div class="price-badge">$2,640</div>
-
-            <div class="house-details">
-              <h3 class="house-name">Safari Oasis</h3>
-              <ul class="property-features">
-                <li class="feature"><i class="fa-solid fa-border-all"></i> 1,480 Sq ft</li>
-                <li class="feature"><i class="fa-solid fa-bed"></i> 2 Bedrooms</li>
-                <li class="feature"><i class="fa-solid fa-bath"></i> 2 Bathrooms</li>
-              </ul>
-            </div>
-          </article>
+        <div class="property-card" style="background-image: url('Images/john-fornander-Id7u0EkTjBE-unsplash.jpg');">
+          <div class="price-badge">$2,640</div>
+          <div class="property-meta">
+            <span class="country">Kenya</span>
+            <span class="city">Nairobi</span>
+          </div>
+          <div class="house-details">
+            <h3 class="house-name">Safari Oasis</h3>
+            <ul class="property-features">
+              <li><i class="fa-solid fa-border-all"></i> 1,480 Sq ft</li>
+              <li><i class="fa-solid fa-bed"></i> 2 Bedrooms</li>
+              <li><i class="fa-solid fa-bath"></i> 2 Bathrooms</li>
+            </ul>
+          </div>
+        </div>
         </a>
-
-        <a href="blog.html" class="property-card-link">
-          <article class="property-card" style="background-image: url('Images/brian-babb-XbwHrt87mQ0-unsplash.jpg');">
-            <div class="price-badge">$2,640</div>
-
-            <div class="house-details">
-              <h3 class="house-name">Cool Palace</h3>
-              <ul class="property-features">
-                <li class="feature"><i class="fa-solid fa-border-all"></i> 1,480 Sq ft</li>
-                <li class="feature"><i class="fa-solid fa-bed"></i> 2 Bedrooms</li>
-                <li class="feature"><i class="fa-solid fa-bath"></i> 2 Bathrooms</li>
-              </ul>
-            </div>
-          </article>
-        </a>
-
-        <a href="blog.html" class="property-card-link">
-          <article class="property-card" style="background-image: url('Images/dillon-kydd-3Ignkeds3w8-unsplash.jpg');">
-            <div class="price-badge">$2,640</div>
-
-            <div class="house-details">
-              <h3 class="house-name">Astoria</h3>
-              <ul class="property-features">
-                <li class="feature"><i class="fa-solid fa-border-all"></i> 1,480 Sq ft</li>
-                <li class="feature"><i class="fa-solid fa-bed"></i> 2 Bedrooms</li>
-                <li class="feature"><i class="fa-solid fa-bath"></i> 2 Bathrooms</li>
-              </ul>
-            </div>
-          </article>
-        </a>
-
       </div>
-      <div class="view-all-button">
-        <span>All Properties</span>
+
+      <div class="swiper-slide">
+        <div class="property-card" style="background-image: url('Images/brian-babb-XbwHrt87mQ0-unsplash.jpg');">
+          <div class="price-badge">$2,640</div>
+          <div class="property-meta">
+            <span class="country">South Africa</span>
+            <span class="city">Cape Town</span>
+          </div>
+          <div class="house-details">
+            <h3 class="house-name">Astoria</h3>
+            <ul class="property-features">
+              <li><i class="fa-solid fa-border-all"></i> 1,480 Sq ft</li>
+              <li><i class="fa-solid fa-bed"></i> 2 Bedrooms</li>
+              <li><i class="fa-solid fa-bath"></i> 2 Bathrooms</li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </section>
+
+      <div class="swiper-slide">
+        <div class="property-card" style="background-image: url('Images/dillon-kydd-3Ignkeds3w8-unsplash.jpg');">
+          <div class="price-badge">$2,640</div>
+          <div class="property-meta">
+            <span class="country">Tanzania</span>
+            <span class="city">Dodoma</span>
+          </div>
+          <div class="house-details">
+            <h3 class="house-name">Cool Palace</h3>
+            <ul class="property-features">
+              <li><i class="fa-solid fa-border-all"></i> 1,480 Sq ft</li>
+              <li><i class="fa-solid fa-bed"></i> 2 Bedrooms</li>
+              <li><i class="fa-solid fa-bath"></i> 2 Bathrooms</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more .swiper-slide blocks as needed -->
+
+    </div>
+
+    <!-- Navigation Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <div class="view-all-button">
+    <span>All Properties</span>
+  </div>
+</section>
 
     <!-- Mission & Vision Section -->
     <section class="vision-mission">
@@ -368,38 +386,26 @@
       <p>&copy; 2025 Seven Flags. All rights reserved.</p>
     </div>
   </footer>
-
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".featuredSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2
+      },
+      1024: {
+        slidesPerView: 3
+      }
+    }
+  });
+</script>
+<script src="script.js"></script>
 </body>
 </html>
-
-
-<script>
-  document.getElementById("calculator-form").addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const P = parseFloat(document.getElementById("homePrice").value) - parseFloat(document.getElementById("downPayment").value);
-    const years = parseFloat(document.getElementById("loanTerm").value);
-    const r = parseFloat(document.getElementById("interestRate").value) / 100 / 12;
-    const n = years * 12;
-
-    const monthly = (P * r) / (1 - Math.pow(1 + r, -n));
-    const result = isFinite(monthly) ? `$${monthly.toFixed(2)} / month` : "Please check your inputs";
-
-    document.getElementById("monthlyPayment").textContent = `Estimated Monthly Payment: ${result}`;
-  });
-  
-</script>
-
-<script>
-  function scrollTestimonials(direction) {
-    const container = document.getElementById("testimonialContainer");
-    const scrollAmount = 320; 
-    container.scrollBy({
-      left: direction * scrollAmount,
-      behavior: "smooth",
-    });
-  }
-</script>
-
 

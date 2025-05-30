@@ -6,46 +6,50 @@
     <title>About Us - Seven Flags</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     
   <!-- Header Section -->
-  <header class="header-section">
-    <div class="website-logo">
-      <img class="logo-monogram" src="Icons/Rent Home Section.svg" alt="Seven Flags" />
-      <div class="brand-name">SevenFlags</div>
-    </div>
-
-    <nav class="navbar">
-      <a href="index.html">Home</a>
-      <div class="dropdown1">
-        <a href="#">Properties <i class="fas fa-angle-down"></i></a>
-        <ul class="dropdown1-menu">
-          <li><a href="buy.html">Buy</a></li>
-          <li><a href="rent.html">Rent</a></li>
-        </ul>
+  <header class="site-header">
+    <div class="header-container">
+      <div class="website-logo">
+        <img class="logo-monogram" src="Icons/Rent Home Section.svg" alt="Seven Flags" />
+        <div class="brand-name">SevenFlags</div>
       </div>
-      <a href="invest.html">Invest</a>
-      <a href="blog.html">Blog</a>
-      <a href="about.html">Overview</a>
-      <a href="contact.html">Contact</a>
-    </nav>
 
-    <div class="buttons">
-      <button class="navigation-button">Admin</button>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      
+      <nav class="navbar" id="navbar">
+        <a href="index.html">Home</a>
+        <a href="rent.html">Properties</a>
+        <a href="invest.html">Invest</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">Overview</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
   </header>
 
 
     <main>
         <!-- Hero Section -->
-        <section class="about-tagline">
-            <h1>About Seven Flags</h1>
-            <p>Your trusted partner in real estate excellence across Africa</p>
+         <section class="breadcrumb-section">
+          <div class="breadcrumb-container">
+            <div class="breadcrumb-wrapper">
+              <div class="breadcrumb-links">
+                <a href="index.html" class="breadcrumb-link">Home</a>
+                <span class="breadcrumb-divider">/</span>
+                <span class="breadcrumb-current">About Us</span>
+              </div>
+              <div class="breadcrumb-title-wrap">
+                <h1 class="breadcrumb-title">About Seven Flags</h1>
+              </div>
+            </div>
+          </div>
         </section>
         
         <section class="our-story">
-            <h2>Our Story</h2>
             <p>
                 Seven Flags Real Estate is a Pan-African property investment company operating across Kenya, Uganda, Tanzania, South Africa, and Ghana. According to their Instagram profile, they provide a safe and lucrative path to invest in Africa.
             </p>
@@ -145,5 +149,30 @@
       <p>&copy; 2025 Seven Flags. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    // Get current page filename 
+const currentPage = window.location.pathname.split("/").pop();
+
+// Get all navbar links
+const navLinks = document.querySelectorAll(".navbar a");
+
+navLinks.forEach(link => {
+    // Get href from each link
+    const linkPage = link.getAttribute("href");
+
+    // Match filename and apply "active" class
+    if (linkPage === currentPage) {
+    link.classList.add("active");
+    }
+});
+
+  function toggleMenu() {
+    document.getElementById("navbar").classList.toggle("active");
+  }
+
+
+  </script>
+
 </body>
 </html>
